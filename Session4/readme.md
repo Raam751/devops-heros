@@ -12,6 +12,7 @@ Abvoe are all the commits (first three are from the main branch and last two are
 
 below are all the commands used to create the above commits.
 
+```bash
 git init
 git remote -v
 git remote add origin https://github.com/Raam751/devops-heros.git
@@ -29,3 +30,4 @@ git log --oneline --all
 git switch main
 git cherry-pick 8528883
 git push origin main
+```
