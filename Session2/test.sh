@@ -4,8 +4,9 @@ mkdir sessionone
 
 touch "sessionone/tests.sh"
 
+
 echo "Enter Name: "
-read name
+read -p "Name: " name
 echo "Current date: $(date)"
 hostname
 whoami

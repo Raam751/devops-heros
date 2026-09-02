@@ -10,7 +10,7 @@ change hw2
 
 Abvoe are all the commits (first three are from the main branch and last two are from the hw branch) made in the readme.md file. The last two commits are not present in the main branch.
 
-below are all the commands used to create the above commits.
+below are all the commands used to create the above commits (Task 2).
 
 ```bash
 git init
@@ -31,3 +31,11 @@ git switch main
 git cherry-pick 8528883
 git push origin main
 ```
+
+Task1: 
+
+```bash
+git commit -m
+```
+
+result: 
