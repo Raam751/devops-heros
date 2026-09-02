@@ -35,7 +35,12 @@ git push origin main
 Task1: 
 
 ```bash
-git commit -m
+git commit -a -m
 ```
 
 result: 
+git commit -a -m "
+testing git commit -a -m command"
+[main ed592da] testing git commit -a -m command
+ 4 files changed, 49 insertions(+), 4 deletions(-)
+ create mode 100644 Session8/docker-compose.yml
