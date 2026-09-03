@@ -1,4 +1,5 @@
 FROM node:22-alpine
+# Start my image with the Python 3.12 image.
 
 WORKDIR /app
 

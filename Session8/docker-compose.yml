@@ -7,6 +7,9 @@ services:
   
   backend:
     build: ./backend
+    networks:
+      - frontend_network
+      - backend_network
     image: nginx
 
   database:
@@ -15,4 +18,6 @@ services:
       MYSQL_ROOT_PASSWORD: rootpassword
       MYSQL_DATABASE: mydatabase
       MYSQL_USER: myuser
+    volumes:
+      - db_data:/var/lib/mysql
   
