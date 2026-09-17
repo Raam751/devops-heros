@@ -1,0 +1,17 @@
+apiVersion: v1
+
+kind: Pod
+
+metadata:
+  name: lifecycle-pending
+
+
+spec:
+  restartPolicy: Never
+  containers:
+    - name: impossible-resource
+      image: nginx:1.27
+      resources:
+        requests:
+          memory: "1Gi"
+          cpu: "1000"

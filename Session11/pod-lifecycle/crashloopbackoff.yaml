@@ -1,0 +1,17 @@
+# most common
+
+
+apiVersion: v1
+
+kind: Pod
+
+metadata:
+  name: lifecycle-crashloop
+
+
+spec:
+  restartPolicy: Never
+  containers:
+    - name: crashibng-app
+      image: busybox:1.36
+      command: ["sh", "-c", "echo Application started'; sleep 3; echo Application crashed; exit 1"]
