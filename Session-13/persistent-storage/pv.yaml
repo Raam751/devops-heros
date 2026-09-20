@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: student-pv
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+    # means only one node at a time can mount the volume as read-write. Other nodes can mount it as read-only.
+  persistentVolumeReclaimPolicy: Retain
+  hostPath:
+    path: /tmp/student-data
